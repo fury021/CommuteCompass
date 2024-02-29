@@ -1,0 +1,89 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    background-color: #343a40;
+    color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.big-heading {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.heading {
+    padding-bottom: 5rem;
+}
+
+#map {
+    height: 30rem;
+    width: 100%;
+}
+
+.container-fluid {
+    font-family: "Montserrat", sans-serif;
+    background: #f8f9fa;
+    color: #212529;
+}
+
+.cardContainer{
+    margin: 10px 35px 10px 15px;
+    padding: 0;
+}
+
+/* Update the card styling */
+.card {
+    color: white;
+    padding: 10px; /* Decreased padding */
+    margin: 10px;
+    background: linear-gradient(to bottom right, #656565, #434343);
+    border: none; /* Removed border */
+    border-radius: 20px; /* Increased border-radius for rounder corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Add a slight lift effect on hover */
+}
+
+.card-arrow {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.5s ease, font-size 0.5s ease; /* Add transition for arrow rotation and size */
+    font-size: 24px; /* Increase arrow size */
+}
+
+/* Adjust expanded card styles */
+.expanded .card-arrow {
+    transform: rotate(180deg) translateY(-2px); /* Rotate arrow when card is expanded and move up slightly */
+}
+
+.card-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease; /* Add transition for smooth expansion/collapse */
+    padding-top: 10px; /* Add some space at the top */
+}
+
+.card.expanded .card-content {
+    max-height: 500px; /* Set to a maximum height to allow smooth expansion */
+}
